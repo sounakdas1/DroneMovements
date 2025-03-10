@@ -44,40 +44,40 @@ void setup() {
 void loop() {
   if (Serial.available()){
     cmd = Serial.read();
-    if(cmd == 'Tu'){
+    if(cmd == 'T'){
       throttleUp(speed);
     }
-    else if(cmd == 'Td'){
+    else if(cmd == 't'){
       throttledown(speed);
     }
     
-    else if(cmd == 'Pf'){
+    else if(cmd == 'P'){
       pitchforward(speed);
     }
-    else if(cmd == 'Pb'){
+    else if(cmd == 'p'){
       pitchbackward(speed);
       
     }
-    else if(cmd == 'Rr'){
+    else if(cmd == 'R'){
       rotateright(speed);
       
 
-    }else if(cmd == 'Rl'){
+    }else if(cmd == 'r'){
       rotateleft(speed);
        
     }
-    else if(cmd == 'Yl'){
+    else if(cmd == 'Y'){
       yawleft(speed);
       
     }
-    else if(cmd == 'Yr'){
+    else if(cmd == 'y'){
       yawright(speed);
  
     }
-    else if(cmd == '+'){
+    else if(cmd == 'A'){
       speedup(speed);
     }
-    else if(cmd == '-'){
+    else if(cmd == 'a'){
       speeddown(speed);
     }
   }
